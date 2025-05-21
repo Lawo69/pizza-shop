@@ -57,7 +57,7 @@ const Navbar = () => {
                 Sign In
               </Button>
             )}
-            <a href="#" className='bg-yellow-600 hover:bg-yellow-700 transition-all text-white py-3 px-3 rounded-full'>
+            <a href="/cart" className='bg-yellow-600 hover:bg-yellow-700 transition-all text-white py-3 px-3 rounded-full'>
               <FaCartShopping />
             </a>
           </div>

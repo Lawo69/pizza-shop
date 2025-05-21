@@ -21,7 +21,7 @@ const HomePage = () => {
     </div>
 
     <div className="pt-10">
-          <h2 className="text-2xl font-semibold mb-6 text-yellow-600 text-center">Menu Page</h2>
+          <h2 className="text-2xl font-semibold mb-6 text-yellow-600 text-center">Menu List</h2>
     
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {menuData.map(pizza => (
