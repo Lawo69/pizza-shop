@@ -7,13 +7,19 @@ const DetailWindow = ({ data, onClose }) => {
   if (!data) return null;
 
   const handleOrder = () => {
+    const user = JSON.parse(localStorage.getItem('user'));
+
+    if (!user) {
+      toast.error("You must log in to add items to the cart.");
+      return;
+    }
+
     const existingOrders = JSON.parse(localStorage.getItem('items')) || [];
     const updatedOrders = [...existingOrders, data];
     localStorage.setItem('items', JSON.stringify(updatedOrders));
 
     console.log("Cart Saved:", data);
     toast.success(`${data.name} added to Cart!`);
-
     onClose();
   };
 

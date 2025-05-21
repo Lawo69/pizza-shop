@@ -40,5 +40,44 @@
       "Olives"
     ],
     "image": "/assets/img/pizza3.jpeg"
+  },
+  {
+    "id": 4,
+    "name": "Pepperoni Pizza",
+    "description": "Spicy pepperoni with mozzarella cheese",
+    "price": 1400,
+    "ingredients": [
+      "Tomato Sauce",
+      "Mozzarella Cheese",
+      "Pepperoni"
+    ],
+    "image": "/assets/img/pizza4.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "Hawaiian Pizza",
+    "description": "Sweet and savory with ham and pineapple",
+    "price": 1600,
+    "ingredients": [
+      "Tomato Sauce",
+      "Mozzarella Cheese",
+      "Ham",
+      "Pineapple"
+    ],
+    "image": "/assets/img/pizza5.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "Meat Lovers Pizza",
+    "description": "A carnivore's delight with multiple meats",
+    "price": 1800,
+    "ingredients": [
+      "Tomato Sauce",
+      "Mozzarella Cheese",
+      "Pepperoni",
+      "Sausage",
+      "Bacon"
+    ],
+    "image": "/assets/img/pizza6.jpeg"
   }
 ]

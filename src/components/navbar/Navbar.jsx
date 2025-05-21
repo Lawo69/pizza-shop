@@ -27,6 +27,7 @@ const Navbar = () => {
     localStorage.removeItem("user");
     setUser(null);
     navigate('/');
+    setMobileDrawerOpen(false);
   };
 
   return (

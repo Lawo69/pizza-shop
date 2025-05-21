@@ -10,7 +10,7 @@ import NavItem from './NavItem'
 
 const Sidebar = () => {
     const navigate = useNavigate();
-    const [isOpen, setIsOpen] = React.useState(false);
+    const [isOpen, setIsOpen] = React.useState(true);
 
     const handleSignOut = () => {
         localStorage.removeItem("user");
@@ -20,13 +20,13 @@ const Sidebar = () => {
     <div>
         <motion.div 
         initial={{ width: 60 }} 
-        animate={{ width: isOpen ? 240 : 60 }}
+        animate={{ width: isOpen ? 200 : 60 }}
         transition={{ duration: 0.4 }}
         className='bg-yellow-600 h-screen text-white p-4 flex flex-col gap-6'>
             <button onClick={() => setIsOpen((prev) => !prev)} className='text-xl mb-4'>
                 <FaBars />
             </button>
-            <nav className={`flex flex-col gap-10 h-full overflow-y-auto ${!isOpen && 'no-scrollbar'}`}>
+            <nav className={`flex flex-col gap-5 h-full overflow-y-auto overflow-x-hidden ${!isOpen && 'no-scrollbar'}`}>
                 {menuItems.map((item, index) => (
                     <NavItem
                         key={index}
@@ -38,9 +38,9 @@ const Sidebar = () => {
                     />
                 ))}
             </nav>
-            <button onClick={handleSignOut} className='text-xl mb-4'>
-                <IoMdLogOut />
-            </button>
+            <div onClick={handleSignOut} className='flex items-center cursor-pointer hover:bg-yellow-700 px-2 py-3 rounded-xl gap-5 text-xl mb-4'>
+                <IoMdLogOut /> <p className='text-sm lg:text-lg'>Logout</p>
+            </div>
         </motion.div>
         {!isOpen && <Tooltip id="sidebar-tooltip" offset={40} />}
     </div>

@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 
 import MainLayout from '../layouts/MainLayout';
 import CenteredLayout from '../layouts/CenteredLayout';
+import SidebarLayout from '../layouts/SidebarLayout';
 
 import Home from '../pages/home';
 import Menu from '../pages/menu';
@@ -11,8 +12,9 @@ import Gallery from '../pages/gallery';
 import Cart from '../pages/cart';
 
 import Login from '../pages/auth/login';
-import SidebarLayout from '../layouts/SidebarLayout';
+
 import Dashboard from '../pages/dashboard/Dashboard';
+import Item from '../pages/dashboard/Item';
 
 import ProtectedRoute from './ProtectedRoute';
 
@@ -43,6 +45,7 @@ const AppRoutes = () => {
         }
       >
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/dashboard/item" element={<Item />} />
       </Route>
     </Routes>
   );
