@@ -7,6 +7,7 @@ const Cart = () => {
   const [items, setItems] = useState([]);
   const [myOrders, setMyOrders] = useState([]);
 
+  // Load cart items and orders from localStorage when the component mounts
   useEffect(() => {
     const storedItems = JSON.parse(localStorage.getItem('items')) || [];
     setItems(storedItems);
@@ -20,6 +21,7 @@ const Cart = () => {
     setItems([]);
   };
 
+  // Handle placing an order
   const handleOrderPlace = () => {
     if (items.length === 0) return;
     const orders = JSON.parse(localStorage.getItem('orders')) || [];

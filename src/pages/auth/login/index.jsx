@@ -19,6 +19,7 @@ const LoginPage = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
+  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
 

@@ -5,6 +5,7 @@ const ProtectedRoute = ({ children }) => {
   const storedUser = localStorage.getItem('user');
   const user = storedUser ? JSON.parse(storedUser) : null;
 
+  // Check if user is logged in
   if (!user) {
     return <Navigate to="/login" replace />;
   }

@@ -6,11 +6,13 @@ const Dashboard = () => {
   const [orders, setOrders] = useState([]);
   const [totalOrders, setTotalOrders] = useState(0);
   const [totalEarnings, setTotalEarnings] = useState(0);
-
+  
+  // Load orders from localStorage when the component mounts
   useEffect(() => {
     loadOrders();
   }, []);
 
+  // Load orders from localStorage
   const loadOrders = () => {
     const storedOrders = JSON.parse(localStorage.getItem('orders')) || [];
     setOrders(storedOrders);
@@ -22,11 +24,12 @@ const Dashboard = () => {
     setTotalEarnings(total);
   };
 
+  // Delete an order
   const deleteOrder = (id) => {
     const updatedOrders = orders.filter(order => order.id !== id);
     localStorage.setItem('orders', JSON.stringify(updatedOrders));
     toast.info(`Order ${id} deleted`);
-    loadOrders(); // Refresh state
+    loadOrders();
   };
 
   return (
