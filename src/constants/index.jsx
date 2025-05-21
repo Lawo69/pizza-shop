@@ -13,32 +13,12 @@ export const navItems = [
     }
 ]
 
-import { FaHome, FaUser, FaEnvelope, FaBlog, FaProjectDiagram } from 'react-icons/fa';
+import { FaHome } from 'react-icons/fa';
 
 export const menuItems = [
     {
         text: "Home",
         icon: <FaHome />,
         href: "/",
-    },  
-    {
-        text: "About",
-        icon: <FaUser />,
-        href: "/about",
-    },
-    {
-        text: "Contact",
-        icon: <FaEnvelope />,
-        href: "/contact",
-    },
-    {
-        text: "Blog",
-        icon: <FaBlog />,
-        href: "/blog",
-    },
-    {
-        text: "Projects",
-        icon: <FaProjectDiagram />,
-        href: "/projects",
     }
 ]

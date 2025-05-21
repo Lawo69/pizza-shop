@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Margherita Pizza",
+    "description": "Classic delight with fresh tomatoes and mozzarella cheese",
+    "price": 1200,
+    "ingredients": [
+      "Tomato Sauce",
+      "Mozzarella Cheese",
+      "Fresh Basil",
+      "Olive Oil"
+    ],
+    "image": "/assets/img/pizza1.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Chicken BBQ Pizza",
+    "description": "Smoky BBQ chicken with onions and cheese",
+    "price": 1500,
+    "ingredients": [
+      "BBQ Sauce",
+      "Grilled Chicken",
+      "Mozzarella Cheese",
+      "Red Onions",
+      "Coriander"
+    ],
+    "image": "/assets/img/pizza2.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Veggie Supreme",
+    "description": "Loaded with fresh vegetables and cheese",
+    "price": 1300,
+    "ingredients": [
+      "Tomato Sauce",
+      "Mozzarella Cheese",
+      "Bell Peppers",
+      "Sweet Corn",
+      "Mushrooms",
+      "Olives"
+    ],
+    "image": "/assets/img/pizza3.jpeg"
+  }
+]

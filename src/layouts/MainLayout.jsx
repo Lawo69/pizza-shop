@@ -11,6 +11,13 @@ const NavbarLayout = () => {
       <main className="flex-1 bg-gray-50">
         <div className="container mx-auto pt-10 px-6"><Outlet/></div>
       </main>
+
+      {/* Footer */}
+      <footer className="bg-gray-800 text-white py-4 mt-20">
+        <div className="container mx-auto text-center">
+          <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+      </footer>
     </div>
   );
 }
